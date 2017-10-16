@@ -1,0 +1,45 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                      General                         | #
+# +------------------------------------------------------+ #
+############################################################
+
+# If enabled, players with the vpnguardplus.alerts permission will be alerted of kicked players
+alerts: true
+
+# If enabled, players in countries from the banned-countries list will be not allowed to join
+ban-countries: false
+
+# List of banned countries (use country name)
+banned-countries:
+ - "United States"
+ - "Mexico"
+ - "Whatever"
+ 
+# Time a request should timeout if no response is found (in milliseconds)
+timeout: 2000
+
+############################################################
+# +------------------------------------------------------+ #
+# |                     Messages                         | #
+# +------------------------------------------------------+ #
+############################################################
+
+# Prefix of all chat messages
+prefix: "&7[&2VPNGuard&7] &6"
+
+# Message displayed to player when they are kicked for using a host
+# %player%, %ip% and %org% can be used as placeholders
+host-kick-message: "&cWe don't allow VPNs on this server!"
+
+# Message displayed to a player when they are kicked for joining from a banned country
+# %player%, %ip%, %org% and %country% can be used as placeholders
+country-ban-kick-message: "&cSorry, we don't allow players from %country% to join!"
+
+# Message sent to all players with vpnguardplus.alerts permission when a player is kicked for using a host
+# %player%, %ip% and %org% can be used as placeholders
+host-kick-alert-message: "%player% was kicked for using a host!"
+
+# Message sent to all players with vpnguardplus.alerts permission when a player is kicked joining from a banned country
+# %player%, %ip%, %org% and %country% can be used as placeholders
+country-ban-alert-message: "%player% was kicked for joining from the banned country %country%!"

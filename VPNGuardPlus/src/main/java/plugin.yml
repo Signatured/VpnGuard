@@ -1,0 +1,29 @@
+name: VPNGuardPlus
+version: 1.0
+description: Protect against VPNs
+main: me.signatured.vpnguardplus.VPNGuardPlus
+
+commands:
+  vpnguard:
+    description: VPNGuardPlus main command
+
+permissions:
+  vpnguardplus.admin:
+    description: Gives access to all VPNGuardPlus commands
+    children:
+      vpnguardplus.alerts: true
+      vpnguardplus.bancountry: true
+      vpnguardplus.lookup: true
+      vpnguardplus.bypass: true
+  vpnguardplus.alerts:
+    description: Disable or enable kick alerts 
+    default: op
+  vpnguardplus.burningdeaths:
+    description: Disable or enable country banning or add/remove a country
+    default: op
+  vpnguardplus.lookup:
+    description: Lookup an ip or player
+    default: op
+  vpnguardplus.bypass:
+    description: Bypass the host check
+    default: false
